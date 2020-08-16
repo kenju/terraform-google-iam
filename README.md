@@ -1,4 +1,15 @@
-# gcp-iam-roles
+# terrafomr-google-iam
+
+https://registry.terraform.io/modules/kenju/iam/google
+
+## Usage
+
+```terraform
+module "iam" {
+  source  = "kenju/iam/google"
+  version = "0.1.0"
+}
+```
 
 ## Documentation
 
