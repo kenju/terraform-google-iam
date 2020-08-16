@@ -1,2 +1,5 @@
-# terraform-google-iam
-A terraform module for GCP IAM roles/permissions
+# gcp-iam-roles
+
+## Documentation
+
+https://cloud.google.com/iam/docs/understanding-roles
