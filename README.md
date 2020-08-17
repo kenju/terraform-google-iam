@@ -7,7 +7,7 @@ https://registry.terraform.io/modules/kenju/iam/google
 ```terraform
 module "iam" {
   source  = "kenju/iam/google"
-  version = "0.1.0"
+  version = "0.1.1"
 }
 ```
 
