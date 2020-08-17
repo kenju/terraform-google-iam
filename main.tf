@@ -100,6 +100,60 @@ locals {
       "run.routes.invoke",
     ],
   }
+  # @doc https://cloud.google.com/datastore/docs/access/iam
+  datastore = {
+    "roles/datastore.user" = [
+      "appengine.applications.get",
+      "datastore.databases.get",
+      "datastore.entities.allocateIds",
+      "datastore.entities.create",
+      "datastore.entities.delete",
+      "datastore.entities.get",
+      "datastore.entities.list",
+      "datastore.entities.update",
+      "datastore.indexes.list",
+      "datastore.namespaces.get",
+      "datastore.namespaces.list",
+      "datastore.statistics.get",
+      "datastore.statistics.list",
+      "resourcemanager.projects.get",
+      "resourcemanager.projects.list",
+    ],
+    "roles/datastore.viewer" = [
+      "appengine.applications.get",
+      "datastore.databases.get",
+      "datastore.entities.get",
+      "datastore.entities.list",
+      "datastore.indexes.get",
+      "datastore.indexes.list",
+      "datastore.namespaces.get",
+      "datastore.namespaces.list",
+      "datastore.statistics.get",
+      "datastore.statistics.list",
+      "resourcemanager.projects.get",
+      "resourcemanager.projects.list",
+    ],
+    "roles/datastore.importExportAdmin" = [
+      "appengine.applications.get",
+      "datastore.databases.export",
+      "datastore.databases.import",
+      "datastore.operations.cancel",
+      "datastore.operations.get",
+      "datastore.operations.list",
+      "resourcemanager.projects.get",
+      "resourcemanager.projects.list",
+    ],
+    "roles/datastore.indexAdmin" = [
+      "appengine.applications.get",
+      "datastore.indexes.create",
+      "datastore.indexes.delete",
+      "datastore.indexes.get",
+      "datastore.indexes.list",
+      "datastore.indexes.update",
+      "resourcemanager.projects.get",
+      "resourcemanager.projects.list",
+    ],
+  }
   # @doc https://cloud.google.com/iam/docs/understanding-custom-roles
   iam = {
     "roles/iam.organizationRoleAdmin" = [

@@ -62,6 +62,24 @@ output "iam_role_serviceAccountUser" {
   value = local.iam["roles/iam.serviceAccountUser"]
 }
 
+# datastore
+
+output "datastore_role_user" {
+  value = local.datastore["roles/datastore.user"]
+}
+
+output "datastore_role_viewer" {
+  value = local.datastore["roles/datastore.viewer"]
+}
+
+output "datastore_role_importExportAdmin" {
+  value = local.datastore["roles/datastore.importExportAdmin"]
+}
+
+output "datastore_role_indexAdmin" {
+  value = local.datastore["roles/datastore.indexAdmin"]
+}
+
 # pubsub
 
 output "pubsub_role_publisher" {
