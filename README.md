@@ -1,4 +1,4 @@
-# terrafomr-google-iam
+# terraform-google-iam
 
 https://registry.terraform.io/modules/kenju/iam/google
 
