@@ -16,18 +16,18 @@ locals {
   cloud-storage = {
     "roles/storage.objectCreator" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "storage.objects.create",
     ],
     "roles/storage.objectViewer" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "storage.objects.get",
       "storage.objects.list",
     ],
     "roles/storage.objectAdmin" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "storage.objects.create",
       "storage.objects.delete",
       "storage.objects.get",
@@ -46,7 +46,7 @@ locals {
     "roles/storage.admin" = [
       "firebase.projects.get",
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "storage.buckets.create",
       "storage.buckets.delete",
       "storage.buckets.get",
@@ -165,7 +165,7 @@ locals {
       "iam.roles.update",
       "resourcemanager.projects.get",
       "resourcemanager.projects.getIamPolicy",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "resourcemanager.organizations.get",
       "resourcemanager.organizations.getIamPolicy",
     ],
@@ -192,7 +192,7 @@ locals {
       "iam.serviceAccounts.undelete",
       "iam.serviceAccounts.update",
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
     ],
     # @doc https://cloud.google.com/compute/docs/access/iam#iam.serviceAccountUser
     "roles/iam.serviceAccountUser" = [
@@ -200,7 +200,7 @@ locals {
       "iam.serviceAccounts.get",
       "iam.serviceAccounts.list",
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
     ],
   }
   # @doc https://cloud.google.com/monitoring/access-control
@@ -532,7 +532,7 @@ locals {
   secretmanager = {
     "roles/secretmanager.admin" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "secretmanager.locations.get",
       "secretmanager.locations.list",
       "secretmanager.secrets.create",
@@ -552,17 +552,17 @@ locals {
     ],
     "roles/secretmanager.secretAccessor" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "secretmanager.versions.access",
     ],
     "roles/secretmanager.secretVersionAdder" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "secretmanager.versions.add",
     ],
     "roles/secretmanager.secretVersionManager" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "secretmanager.versions.add",
       "secretmanager.versions.destroy",
       "secretmanager.versions.disable",
@@ -572,7 +572,7 @@ locals {
     ],
     "roles/secretmanager.viewer" = [
       "resourcemanager.projects.get",
-      # "resourcemanager.projects.list",
+      "resourcemanager.projects.list",
       "secretmanager.locations.list",
       "secretmanager.secrets.get",
       "secretmanager.secrets.getIamPolicy",
