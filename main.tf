@@ -1,4 +1,23 @@
 locals {
+  # @doc https://cloud.google.com/functions/docs/reference/iam/permissions
+  cloudfunctions = {
+    "roles/cloudfunctions.admin" = [
+      "cloudfunctions.functions.call",
+      "cloudfunctions.functions.invoke",
+      "cloudfunctions.functions.create",
+      "cloudfunctions.functions.delete",
+      "cloudfunctions.functions.get",
+      "cloudfunctions.functions.list",
+      "cloudfunctions.functions.update",
+      "cloudfunctions.functions.sourceCodeGet",
+      "cloudfunctions.functions.sourceCodeSet",
+      "cloudfunctions.functions.getIamPolicy",
+      "cloudfunctions.functions.setIamPolicy",
+      "cloudfunctions.operations.get",
+      "cloudfunctions.operations.list",
+      "cloudfunctions.locations.list",
+    ],
+  }
   # @doc https://cloud.google.com/cloud-build/docs/iam-roles-permissions
   cloud-build = {
     "roles/cloudbuild.builds.viewer" = [

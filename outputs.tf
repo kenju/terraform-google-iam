@@ -1,3 +1,9 @@
+# cloudfunctions
+
+output "cloudfunctions_role_admin" {
+  value = local.cloudfunctions["roles/cloudfunctions.admin"]
+}
+
 # cloud_build
 
 output "cloud_build_role_viewer" {
