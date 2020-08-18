@@ -165,7 +165,7 @@ locals {
       "iam.roles.update",
       "resourcemanager.projects.get",
       "resourcemanager.projects.getIamPolicy",
-      "resourcemanager.projects.list",
+      # "resourcemanager.projects.list",
       "resourcemanager.organizations.get",
       "resourcemanager.organizations.getIamPolicy",
     ],
@@ -192,7 +192,7 @@ locals {
       "iam.serviceAccounts.undelete",
       "iam.serviceAccounts.update",
       "resourcemanager.projects.get",
-      "resourcemanager.projects.list",
+      # "resourcemanager.projects.list",
     ],
     # @doc https://cloud.google.com/compute/docs/access/iam#iam.serviceAccountUser
     "roles/iam.serviceAccountUser" = [
@@ -200,7 +200,7 @@ locals {
       "iam.serviceAccounts.get",
       "iam.serviceAccounts.list",
       "resourcemanager.projects.get",
-      "resourcemanager.projects.list",
+      # "resourcemanager.projects.list",
     ],
   }
   # @doc https://cloud.google.com/monitoring/access-control
