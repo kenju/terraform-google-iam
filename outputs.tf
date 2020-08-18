@@ -62,6 +62,64 @@ output "iam_role_serviceAccountUser" {
   value = local.iam["roles/iam.serviceAccountUser"]
 }
 
+# monitoring
+
+output "monitoring_role_viewer" {
+  value = local.monitoring["roles/monitoring.viewer"]
+}
+
+output "monitoring_role_editor" {
+  value = local.monitoring["roles/monitoring.editor"]
+}
+
+output "monitoring_role_admin" {
+  value = local.monitoring["roles/monitoring.admin"]
+}
+
+output "monitoring_role_metricWriter" {
+  value = local.monitoring["roles/monitoring.metricWriter"]
+}
+
+output "monitoring_role_alertPolicyViewer" {
+  value = local.monitoring["roles/monitoring.alertPolicyViewer"]
+}
+
+output "monitoring_role_alertPolicyEditor" {
+  value = local.monitoring["roles/monitoring.alertPolicyEditor"]
+}
+
+output "monitoring_role_dashboardViewer" {
+  value = local.monitoring["roles/monitoring.dashboardViewer"]
+}
+
+output "monitoring_role_dashboardEditor" {
+  value = local.monitoring["roles/monitoring.dashboardEditor"]
+}
+
+output "monitoring_role_notificationChannelViewer" {
+  value = local.monitoring["roles/monitoring.notificationChannelViewer"]
+}
+
+output "monitoring_role_notificationChannelEditor" {
+  value = local.monitoring["roles/monitoring.notificationChannelEditor"]
+}
+
+output "monitoring_role_servicesViewer" {
+  value = local.monitoring["roles/monitoring.servicesViewer"]
+}
+
+output "monitoring_role_servicesEditor" {
+  value = local.monitoring["roles/monitoring.servicesEditor"]
+}
+
+output "monitoring_role_uptimeCheckConfigViewer" {
+  value = local.monitoring["roles/monitoring.uptimeCheckConfigViewer"]
+}
+
+output "monitoring_role_uptimeCheckConfigEditor" {
+  value = local.monitoring["roles/monitoring.uptimeCheckConfigEditor"]
+}
+
 # datastore
 
 output "datastore_role_user" {
