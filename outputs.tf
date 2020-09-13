@@ -14,6 +14,20 @@ output "cloud_build_role_editor" {
   value = local.cloud-build["roles/cloudbuild.builds.editor"]
 }
 
+# cloud_dns
+
+output "cloud_dns_role_admin" {
+  value = local.cloud-dns["roles/dns.admin"]
+}
+
+output "cloud_dns_role_peer" {
+  value = local.cloud-dns["roles/dns.peer"]
+}
+
+output "cloud_dns_role_reader" {
+  value = local.cloud-dns["roles/dns.reader"]
+}
+
 # cloud_storage
 
 output "cloud_storage_role_objectCreator" {
