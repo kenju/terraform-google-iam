@@ -1,3 +1,33 @@
+# those resources are not allowed for the custom role
+output "iam_custom_role_denylist" {
+  value = [
+    "resourcemanager.projects.list",
+    "run.routes.invoke",
+    "stackdriver.projects.edit",
+    "datastore.databases.get",
+    "datastore.databases.export",
+    "datastore.databases.import",
+    "datastore.entities.get",
+    "datastore.entities.list",
+    "datastore.entities.allocateIds",
+    "datastore.entities.create",
+    "datastore.entities.delete",
+    "datastore.entities.update",
+    "datastore.indexes.get",
+    "datastore.indexes.list",
+    "datastore.indexes.create",
+    "datastore.indexes.delete",
+    "datastore.indexes.update",
+    "datastore.operations.cancel",
+    "datastore.operations.get",
+    "datastore.operations.list",
+    "datastore.namespaces.get",
+    "datastore.namespaces.list",
+    "datastore.statistics.get",
+    "datastore.statistics.list",
+  ]
+}
+
 # cloudfunctions
 
 output "cloudfunctions_role_admin" {
