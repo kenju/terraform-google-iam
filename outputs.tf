@@ -58,12 +58,12 @@ output "bigquery_role_jobUser" {
   value = local.bigquery["roles/bigquery.jobUser"]
 }
 
-output "bigquery_role_metadataViewerr" {
-  value = local.bigquery["roles/bigquery.metadataViewerr"]
+output "bigquery_role_metadataViewer" {
+  value = local.bigquery["roles/bigquery.metadataViewer"]
 }
 
-output "bigquery_role_eradSessionUserr" {
-  value = local.bigquery["roles/bigquery.eradSessionUserr"]
+output "bigquery_role_readSessionUser" {
+  value = local.bigquery["roles/bigquery.readSessionUser"]
 }
 
 output "bigquery_role_resourceAdmin" {
