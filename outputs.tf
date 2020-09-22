@@ -31,55 +31,55 @@ output "iam_custom_role_denylist" {
 # bigquery
 
 output "bigquery_role_admin" {
-  value = local.bigquery["roles/admin"]
+  value = local.bigquery["roles/bigquery.admin"]
 }
 
 output "bigquery_role_connectionAdmin" {
-  value = local.bigquery["roles/connectionAdmin"]
+  value = local.bigquery["roles/bigquery.connectionAdmin"]
 }
 
 output "bigquery_role_connectionUser" {
-  value = local.bigquery["roles/connectionUser"]
+  value = local.bigquery["roles/bigquery.connectionUser"]
 }
 
 output "bigquery_role_dataEditor" {
-  value = local.bigquery["roles/dataEditor"]
+  value = local.bigquery["roles/bigquery.dataEditor"]
 }
 
 output "bigquery_role_dataOwner" {
-  value = local.bigquery["roles/dataOwner"]
+  value = local.bigquery["roles/bigquery.dataOwner"]
 }
 
 output "bigquery_role_dataViewer" {
-  value = local.bigquery["roles/dataViewer"]
+  value = local.bigquery["roles/bigquery.dataViewer"]
 }
 
 output "bigquery_role_jobUser" {
-  value = local.bigquery["roles/jobUser"]
+  value = local.bigquery["roles/bigquery.jobUser"]
 }
 
 output "bigquery_role_metadataViewerr" {
-  value = local.bigquery["roles/metadataViewerr"]
+  value = local.bigquery["roles/bigquery.metadataViewerr"]
 }
 
 output "bigquery_role_eradSessionUserr" {
-  value = local.bigquery["roles/eradSessionUserr"]
+  value = local.bigquery["roles/bigquery.eradSessionUserr"]
 }
 
 output "bigquery_role_resourceAdmin" {
-  value = local.bigquery["roles/resourceAdmin"]
+  value = local.bigquery["roles/bigquery.resourceAdmin"]
 }
 
 output "bigquery_role_resourceEditor" {
-  value = local.bigquery["roles/resourceEditor"]
+  value = local.bigquery["roles/bigquery.resourceEditor"]
 }
 
 output "bigquery_role_resourceViewer" {
-  value = local.bigquery["roles/resourceViewer"]
+  value = local.bigquery["roles/bigquery.resourceViewer"]
 }
 
 output "bigquery_role_user" {
-  value = local.bigquery["roles/user"]
+  value = local.bigquery["roles/bigquery.user"]
 }
 
 # cloudfunctions
