@@ -26,6 +26,7 @@ locals {
       "bigquery.datasets.update",
       "bigquery.datasets.updateTag",
       "bigquery.jobs.create",
+      "bigquery.jobs.get",
       "bigquery.jobs.list",
       "bigquery.jobs.listAll",
       "bigquery.jobs.update",
